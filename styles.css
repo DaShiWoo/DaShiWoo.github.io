@@ -1,0 +1,510 @@
+/* CSS Variables & Styling Framework */
+:root {
+    --bg-main: #06090E;
+    --bg-card: rgba(13, 20, 32, 0.4);
+    --border-color: rgba(255, 255, 255, 0.08);
+    --text-primary: #FFFFFF;
+    --text-secondary: #8E9BAE;
+    
+    /* Neon Colors */
+    --neon-green: #00E676;
+    --neon-blue: #00B0FF;
+    --neon-purple: #D500F9;
+    
+    --shadow-green: 0 0 20px rgba(0, 230, 118, 0.25);
+    --shadow-blue: 0 0 20px rgba(0, 176, 255, 0.25);
+    --shadow-purple: 0 0 20px rgba(213, 0, 249, 0.25);
+    
+    --font-header: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Bilingual Display Control */
+body.lang-en .lang-uk {
+    display: none !important;
+}
+
+body.lang-uk .lang-en {
+    display: none !important;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Floating Navigation Header */
+.glass-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(6, 9, 14, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo-text {
+    font-family: var(--font-header);
+    font-size: 18px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--neon-blue), var(--neon-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
+
+/* Lang Switcher Button */
+.btn-lang {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 6px 14px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 13px;
+}
+
+.btn-lang:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Glassmorphism Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--neon-blue), var(--neon-green));
+    border: none;
+    color: #000;
+    padding: 12px 28px;
+    border-radius: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--font-header);
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 230, 118, 0.35);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 12px 28px;
+    border-radius: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--font-header);
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-text {
+    color: var(--neon-green);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.btn-text:hover {
+    opacity: 0.8;
+}
+
+/* Hero Landing Section */
+.hero-section {
+    padding-top: 150px;
+    padding-bottom: 80px;
+    background: radial-gradient(circle at 90% 10%, rgba(0, 230, 118, 0.08), transparent 45%),
+                radial-gradient(circle at 10% 90%, rgba(0, 176, 255, 0.08), transparent 45%);
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.badge {
+    background: rgba(0, 230, 118, 0.08);
+    border: 1px solid rgba(0, 230, 118, 0.15);
+    color: var(--neon-green);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.hero-content h1 {
+    font-family: var(--font-header);
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-content p {
+    color: var(--text-secondary);
+    font-size: 17px;
+    margin-bottom: 36px;
+}
+
+.hero-ctas {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* Standard Section Layouts */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-family: var(--font-header);
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.section-desc {
+    color: var(--text-secondary);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 48px auto;
+    font-size: 15px;
+}
+
+/* Glass Card Styling */
+.glass-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 32px;
+}
+
+/* Flagship App Card Layout */
+.flagship-card {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    gap: 40px;
+    align-items: center;
+    border-color: rgba(0, 230, 118, 0.25);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 230, 118, 0.1);
+    margin-bottom: 60px;
+}
+
+.flagship-img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.flagship-icon {
+    width: 140px;
+    height: 140px;
+    border-radius: 28px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5), 0 0 15px rgba(0, 230, 118, 0.15);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.flagship-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.game-badge {
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.game-badge.neon-green {
+    background: rgba(0, 230, 118, 0.1);
+    border: 1px solid rgba(0, 230, 118, 0.2);
+    color: var(--neon-green);
+}
+
+.flagship-info h3 {
+    font-family: var(--font-header);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.flagship-info p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.flagship-ctas {
+    display: flex;
+    gap: 16px;
+}
+
+/* Subsection Title */
+.subsection-title {
+    font-family: var(--font-header);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+/* Grid Layout for Upcoming Games */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.game-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 32px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.game-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.game-card.neon-purple::before { background: var(--neon-purple); }
+.game-card.neon-purple:hover { box-shadow: var(--shadow-purple); border-color: rgba(213,0,249,0.3); }
+
+.game-card.neon-blue::before { background: var(--neon-blue); }
+.game-card.neon-blue:hover { box-shadow: var(--shadow-blue); border-color: rgba(0,176,255,0.3); }
+
+.game-card:hover {
+    transform: translateY(-6px);
+    background: rgba(13, 20, 32, 0.5);
+}
+
+.game-card .card-icon {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.game-card h3 {
+    font-family: var(--font-header);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.game-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.status-badge {
+    align-self: flex-start;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    background: rgba(255,255,255,0.06);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+}
+
+/* About Us Card */
+.about-section {
+    background: radial-gradient(circle at 50% 50%, rgba(213, 0, 249, 0.03), transparent 60%);
+}
+
+.about-card {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-card h2 {
+    font-family: var(--font-header);
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.about-card p {
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+/* Compliance Grid Details */
+.compliance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.compliance-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.compliance-card h3 {
+    font-family: var(--font-header);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.compliance-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Footer layout */
+footer {
+    border-top: 1px solid var(--border-color);
+    padding: 32px 0;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive configurations */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .flagship-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    .flagship-info {
+        align-items: center;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+}

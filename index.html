@@ -1,8 +1,198 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="qO8c6bVRz6Z_QqdlcDhLTlo_Dq95NrdptQtTdDqgRBw" />
-  </head>
-  <body>
-    <h1>GuessTheSong Developer Page</h1>
-  </body>
+    <title>DaShiWoo Games — Premium Mobile Game Developer</title>
+    <link rel="icon" type="image/jpg" href="app_icon.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-uk">
+
+    <!-- Header Navigation -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="app_icon.jpg" alt="DaShiWoo Games Logo" class="logo-img">
+                <span class="logo-text">DaShiWoo Games</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#games" class="lang-en">Our Games</a>
+                <a href="#games" class="lang-uk">Наші ігри</a>
+                <a href="#about" class="lang-en">About Us</a>
+                <a href="#about" class="lang-uk">Про нас</a>
+                <a href="#compliance" class="lang-en">Compliance</a>
+                <a href="#compliance" class="lang-uk">Інформація</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="btn-lang">
+                    <span class="lang-en">🇺🇦 UA</span>
+                    <span class="lang-uk">🇬🇧 EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="lang-en">🕹️ Offline-First Mobile Entertainment</span>
+                    <span class="lang-uk">🕹️ Мобільні офлайн-ігри нового покоління</span>
+                </div>
+                <h1 class="lang-en">We Craft Playful Music & Trivia Experiences</h1>
+                <h1 class="lang-uk">Створюємо яскраві музичні квізи та вікторини</h1>
+                
+                <p class="lang-en">Focusing on high-quality visual aesthetics, smooth gameplay mechanics, and empowering users to play with their own custom localized content.</p>
+                <p class="lang-uk">Наш фокус — це висока естетика дизайну, плавний ігровий процес та надання гравцям свободи грати із власними музичними пакетами.</p>
+                
+                <div class="hero-ctas">
+                    <a href="#games" class="btn-primary">
+                        <span class="lang-en">Browse Games</span>
+                        <span class="lang-uk">Дивитись ігри</span>
+                    </a>
+                    <a href="https://t.me/guessthesong" target="_blank" class="btn-secondary">
+                        <span class="lang-en">Join Telegram</span>
+                        <span class="lang-uk">Приєднатись в Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="section games-section">
+        <div class="container">
+            <h2 class="section-title lang-en">Our Flagship Title</h2>
+            <h2 class="section-title lang-uk">Наш головний хіт</h2>
+            <p class="section-desc lang-en">Play, guess, and have fun with friends or solo.</p>
+            <p class="section-desc lang-uk">Грай, вгадуй та розважайся в компанії або соло.</p>
+
+            <!-- Flagship Game Showcase Card -->
+            <div class="flagship-card glass-card">
+                <div class="flagship-img-wrapper">
+                    <img src="app_icon.jpg" alt="Guess The Song Icon" class="flagship-icon">
+                </div>
+                <div class="flagship-info">
+                    <div class="game-badge neon-green">
+                        <span class="lang-en">Flagship Game</span>
+                        <span class="lang-uk">Головна гра</span>
+                    </div>
+                    <h3 class="lang-en">Guess The Song (Вгадай пісню)</h3>
+                    <h3 class="lang-uk">Guess The Song (Вгадай пісню)</h3>
+                    
+                    <p class="lang-en">A modern party music trivia game. Challenge teams using interactive buzzers, cooperate in pairs, or race against a 30s timer in Solo mode using custom MP3 packages!</p>
+                    <p class="lang-uk">Сучасна музична вікторина для компаній та соло-гравців. Змагайтеся командами за допомогою кнопок-базерів, грайте в дуеті або вгадуйте пісні під тиском 30с таймера!</p>
+                    
+                    <div class="flagship-ctas">
+                        <a href="https://dashiwoo.github.io/GuessTheSong/" class="btn-primary">
+                            <span class="lang-en">Visit Game Site</span>
+                            <span class="lang-uk">Сайт гри</span>
+                        </a>
+                        <a href="https://github.com/DaShiWoo/GuessTheSong/releases/latest" class="btn-secondary">
+                            <span class="lang-en">Download APK</span>
+                            <span class="lang-uk">Завантажити APK</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Games Grid -->
+            <h3 class="subsection-title lang-en">Upcoming Games</h3>
+            <h3 class="subsection-title lang-uk">Ігри у розробці</h3>
+            
+            <div class="games-grid">
+                <!-- Anime Quiz -->
+                <div class="game-card neon-purple">
+                    <div class="card-icon">🌸</div>
+                    <h3 class="lang-en">Anime Quiz</h3>
+                    <h3 class="lang-uk">Аніме Квіз</h3>
+                    <p class="lang-en">Test your anime knowledge! Over thousands of questions, character soundboards, and soundtrack guessing games.</p>
+                    <p class="lang-uk">Перевір свої знання аніме! Тисячі запитань, звукові плати персонажів та вгадування легендарних саундтреків.</p>
+                    <span class="status-badge lang-en">In Development</span>
+                    <span class="status-badge lang-uk">У розробці</span>
+                </div>
+
+                <!-- Eurovision Quiz -->
+                <div class="game-card neon-blue">
+                    <div class="card-icon">🇪🇺</div>
+                    <h3 class="lang-en">Eurovision Trivia</h3>
+                    <h3 class="lang-uk">Євробачення Квіз</h3>
+                    <p class="lang-en">Relive the magic of the world's biggest song contest. Guess winning songs, artists, and historical trivia.</p>
+                    <p class="lang-uk">Згадай магію найбільшого пісенного конкурсу світу. Вгадуй пісні-переможці, виконавців та історичні факти.</p>
+                    <span class="status-badge lang-en">In Development</span>
+                    <span class="status-badge lang-uk">У розробці</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-card glass-card">
+                <h2 class="lang-en">About DaShiWoo Games</h2>
+                <h2 class="lang-uk">Про DaShiWoo Games</h2>
+                
+                <p class="lang-en">We are an independent mobile game developer focusing on creating engaging, local, and offline-first gaming experiences. We believe that mobile games should be customizable, visually premium, and bring people together.</p>
+                <p class="lang-uk">Ми — незалежний розробник мобільних ігор, який створює захоплюючі офлайн-ігри. Ми віримо, що ігри мають об'єднувати людей, виглядати сучасно та надавати повну свободу у налаштуванні власного контенту.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Section -->
+    <section id="compliance" class="section compliance-section">
+        <div class="container">
+            <h2 class="section-title lang-en">Developer Info & Compliance</h2>
+            <h2 class="section-title lang-uk">Інформація та відповідність правилам</h2>
+            <p class="section-desc lang-en">Required documents and verification files for Google Play and advertising platforms.</p>
+            <p class="section-desc lang-uk">Офіційні файли та документи для Google Play та рекламних мереж.</p>
+            
+            <div class="compliance-grid">
+                <!-- Privacy Policy -->
+                <div class="compliance-card glass-card">
+                    <h3>📄 Privacy Policy</h3>
+                    <p class="lang-en">Our official user data protection policy for "Guess The Song" mobile application.</p>
+                    <p class="lang-uk">Офіційна політика захисту даних користувачів для мобільної гри "Guess The Song".</p>
+                    <a href="privacy_policy.txt" target="_blank" class="btn-text">
+                        <span class="lang-en">View Privacy Policy</span>
+                        <span class="lang-uk">Читати Політику</span>
+                    </a>
+                </div>
+
+                <!-- app-ads.txt -->
+                <div class="compliance-card glass-card">
+                    <h3>🤖 app-ads.txt</h3>
+                    <p class="lang-en">AdMob publisher identity authorization file for Google Play verification.</p>
+                    <p class="lang-uk">Файл авторизації видавця AdMob для автоматичної верифікації Google Play.</p>
+                    <a href="app-ads.txt" target="_blank" class="btn-text">
+                        <span class="lang-en">View app-ads.txt</span>
+                        <span class="lang-uk">Читати app-ads.txt</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 DaShiWoo Games. <span class="lang-en">All rights reserved.</span><span class="lang-uk">Усі права захищені.</span></p>
+            <div class="footer-links">
+                <span class="lang-en">Contact: <a href="mailto:support@daisl-games.com">support@daisl-games.com</a></span>
+                <span class="lang-uk">Контакт: <a href="mailto:support@daisl-games.com">support@daisl-games.com</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
 </html>

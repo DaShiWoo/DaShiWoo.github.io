@@ -1,0 +1,74 @@
+========================================================================
+                          PRIVACY POLICY
+========================================================================
+Mobile Application: "Guess The Song" (Вгадай пісню)
+Package Name: com.daisl.guessthesong
+Last Updated: July 04, 2026
+
+------------------------------------------------------------------------
+ENGLISH VERSION
+------------------------------------------------------------------------
+1. GENERAL PROVISIONS
+This Privacy Policy governs the collection, processing, and protection of information of users of the "Guess The Song" mobile application (hereinafter - the Application). The Application is provided free of charge (Free app) and is intended for use "as is". By installing and using the Application, you agree to the terms of this Privacy Policy.
+
+2. INFORMATION COLLECTION AND USE
+The Application does not require registration and does not collect your personal data (such as name, email address, phone number, or precise location). However, the Application uses third-party services that may collect anonymized information used to identify you (for example, the Google Advertising ID).
+
+Links to the privacy policies of third-party service providers used in the Application:
+- Google Play Services (https://www.google.com/policies/privacy/)
+- Google AdMob (https://support.google.com/admob/answer/6128543)
+- Google Analytics for Firebase (https://firebase.google.com/policies/analytics)
+- Firebase Crashlytics (https://firebase.google.com/support/privacy)
+
+3. ADVERTISING AND PAYMENTS
+- Advertising (AdMob): The application displays advertisements (banners, interstitial ads, and rewarded videos). Third-party advertising networks may use unique identifiers of your device to personalize ads.
+- In-app purchases (Google Play Billing): All payments for digital items (such as removing ads) are processed directly by Google through the Google Play Billing API. The developer of the Application does not collect, store, or have access to your bank card details or payment credentials.
+
+4. ERROR LOGS AND ANALYTICS
+We use Firebase Analytics and Crashlytics services to collect anonymized statistics on application usage and automated crash reports. This data helps us find and fix bugs, improving the stability of the game on various devices.
+
+5. SECURITY
+We strive to use commercially acceptable means of protecting any anonymized information transmitted by the Application. However, remember that no method of transmission over the Internet or method of electronic storage is 100% secure and reliable.
+
+6. CHILDREN'S PRIVACY
+The Application does not collect personal information from children. If we become aware that a child has provided us with personal information, we will immediately delete it from our servers.
+
+7. CHANGES TO THIS PRIVACY POLICY
+We may update our Privacy Policy from time to time. Changes take effect upon publication in this document. You are advised to review this page periodically for changes.
+
+8. CONTACTS
+If you have any questions or suggestions regarding our Privacy Policy, please contact us by email: support@daisl-games.com
+
+------------------------------------------------------------------------
+УКРАЇНСЬКА ВЕРСІЯ
+------------------------------------------------------------------------
+1. ЗАГАЛЬНІ ПОЛОЖЕННЯ
+Ця Політика конфиденційності визначає порядок збору, обробки та захисту інформації користувачів мобільного додатка "Guess The Song" (далі — Додаток). Додаток надається безкоштовно (Free app) і призначений для використання «як є». Встановлюючи та використовуючи Додаток, ви погоджуєтеся з умовами цієї Політики конфиденційності.
+
+2. ЗБІР ТА ВИКОРИСТАННЯ ІНФОРМАЦІЇ
+Додаток не вимагає реєстрації та не збирає ваші особисті дані (такі як ім'я, адреса електронної пошти, номер телефону або точне місцезнаходження). Однак Додаток використовує сторонні сервіси, які можуть збирати знеособлену інформацію, що використовується для вашої ідентифікації (наприклад, рекламний ідентифікатор Google Advertising ID).
+
+Посилання на політики конфиденційності сторонніх постачальників послуг, що використовуються в Додатку:
+- Google Play Services (https://www.google.com/policies/privacy/)
+- Google AdMob (https://support.google.com/admob/answer/6128543)
+- Google Analytics for Firebase (https://firebase.google.com/policies/analytics)
+- Firebase Crashlytics (https://firebase.google.com/support/privacy)
+
+3. РЕКЛАМА ТА ПЛАТЕЖІ
+- Реклама (AdMob): У додатку відображаються рекламні оголошення (банери, міжсторінкові оголошення та відео з винагородою). Сторонні рекламні мережі можуть використовувати унікальні ідентифікатори вашого пристрою для персоналізації реклами.
+- Покупки в додатку (Google Play Billing): Всі платежі за цифрові товари (наприклад, відключення реклами) обробляються безпосередньо компанією Google через Google Play Billing API. Розробник Додатка не збирає, не зберігає та не має доступу до даних ваших банківських карток або платіжних реквізитів.
+
+4. ЛОГИ ПОМИЛОК ТА АНАЛІТИКА
+Ми використовуємо сервіси Firebase Analytics та Crashlytics для збору знеособленої статистики про використання додатка та автоматичних звітів про збої. Ці дані допомагають нам знаходити та виправляти помилки, підвищуючи стабільність роботи гри на різних пристроях.
+
+5. БЕЗПЕКА
+Ми прагнемо використовувати комерційно прийнятні засоби захисту будь-якої знеособленої інформації, що передається Додатком. Але пам'ятайте, що жоден метод передачі через Інтернет або метод електронного збереження не є на 100% безпечним та надійним.
+
+6. КОНФІДЕНЦІЙНІСТЬ ДІТЕЙ
+Додаток не призначений для збору особистої інформації дітей. Якщо нам стане відомо, що дитина надала нам особисту інформацію, ми негайно видалимо її з наших серверів.
+
+7. ЗМІНИ В ПОЛІТИЦІ КОНФІДЕНЦІЙНОСТІ
+Ми можемо оновлювати нашу Політику конфиденційності час від часу. Зміни набирають чинності з моменту їх публікації в цьому документі. Вам рекомендується періодично переглядати цю сторінку на предмет змін.
+
+8. КОНТАКТИ
+Якщо у вас є будь-які запитання або пропозиції щодо нашої Політики конфиденційності, будь ласка, зв'яжіться з нами електронною поштою: support@daisl-games.com
