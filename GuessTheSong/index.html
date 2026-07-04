@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Song — Music Trivia Party Game</title>
+    <link rel="icon" type="image/jpg" href="assets/app_icon.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-uk">
+
+    <!-- Header Navigation -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/app_icon.jpg" alt="Guess The Song Logo" class="logo-img">
+                <span class="logo-text">Guess The Song</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#features" class="lang-en">Features</a>
+                <a href="#features" class="lang-uk">Особливості</a>
+                <a href="#demo" class="lang-en">Try Game</a>
+                <a href="#demo" class="lang-uk">Спробувати гру</a>
+                <a href="#packs" class="lang-en">Custom Packs</a>
+                <a href="#packs" class="lang-uk">Кастомні паки</a>
+                <a href="#telegram" class="lang-en">Community</a>
+                <a href="#telegram" class="lang-uk">Спільнота</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="btn-lang">
+                    <span class="lang-en">🇺🇦 UA</span>
+                    <span class="lang-uk">🇬🇧 EN</span>
+                </button>
+                <a href="https://github.com/DaShiWoo/GuessTheSong" target="_blank" class="btn-github">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="lang-en">✨ New Solo Mode & Language Update</span>
+                    <span class="lang-uk">✨ Новий соло-режим та виправлення мов</span>
+                </div>
+                <h1 class="lang-en">The Ultimate Music Trivia Game for Everyone!</h1>
+                <h1 class="lang-uk">Найкраща музична вікторина для будь-якої компанії!</h1>
+                
+                <p class="lang-en">Play with friends using buzzer controllers, collaborate in pairs, guide the party as a Host, or face the clock in the new Solo Mode using local music packs.</p>
+                <p class="lang-uk">Грайте з друзями за допомогою кнопок-базерів, змагайтеся в дуеті, керуйте вечіркою як ведучий або киньте виклик часу в новому Соло-режимі за допомогою ваших улюблених пісень.</p>
+
+                <div class="hero-ctas">
+                    <a href="https://github.com/DaShiWoo/GuessTheSong/releases/latest" class="btn-primary">
+                        <span class="lang-en">Download APK</span>
+                        <span class="lang-uk">Завантажити APK</span>
+                    </a>
+                    <a href="#demo" class="btn-secondary">
+                        <span class="lang-en">Play Live Demo</span>
+                        <span class="lang-uk">Грати демо-версію</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-gallery">
+                <div class="gallery-wrapper">
+                    <img src="assets/screen1.png" alt="Lobby Screen" class="gallery-img active">
+                    <img src="assets/screen2.png" alt="Quiz Mode Screen" class="gallery-img">
+                    <img src="assets/screen3.png" alt="Solo Mode Screen" class="gallery-img">
+                    <img src="assets/screen4.png" alt="End Game Screen" class="gallery-img">
+                </div>
+                <div class="gallery-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features-section">
+        <div class="container">
+            <h2 class="section-title lang-en">Exciting Game Modes</h2>
+            <h2 class="section-title lang-uk">Захоплюючі режими гри</h2>
+            
+            <div class="features-grid">
+                <!-- Quiz Mode -->
+                <div class="feature-card neon-blue">
+                    <div class="card-icon">👥</div>
+                    <h3 class="lang-en">Classic Quiz</h3>
+                    <h3 class="lang-uk">Класичний квіз</h3>
+                    <p class="lang-en">Divide into teams and play with interactive buzzers. Lock in answers to score points!</p>
+                    <p class="lang-uk">Діліться на команди та грайте за допомогою інтерактивних кнопок. Тисніть швидше за всіх, щоб відповісти!</p>
+                </div>
+                <!-- Pair Mode -->
+                <div class="feature-card neon-purple">
+                    <div class="card-icon">🤝</div>
+                    <h3 class="lang-en">Pair Mode</h3>
+                    <h3 class="lang-uk">Дует (Пари)</h3>
+                    <p class="lang-en">Cooperate together on a single device, split points, and find out how well you know music together.</p>
+                    <p class="lang-uk">Грайте разом на одному пристрої, діліть бали навпіл та дізнайтеся, наскільки добре ви разом знаєте музику.</p>
+                </div>
+                <!-- Solo Mode -->
+                <div class="feature-card neon-green">
+                    <div class="card-icon">⏱️</div>
+                    <h3 class="lang-en">Solo Mode</h3>
+                    <h3 class="lang-uk">Соло-режим</h3>
+                    <p class="lang-en">No teams, no buzzers. Choose from four options directly against a 30-second countdown timer!</p>
+                    <p class="lang-uk">Без команд та без базерів. Відгадуйте пісні прямо з чотирьох варіантів під тиском 30-секундного таймера!</p>
+                </div>
+                <!-- Host Mode -->
+                <div class="feature-card neon-yellow">
+                    <div class="card-icon">🎤</div>
+                    <h3 class="lang-en">Host Mode</h3>
+                    <h3 class="lang-uk">Режим ведучого</h3>
+                    <p class="lang-en">Be the game master. Control music playback, assign points, and manage the team scoreboard manually.</p>
+                    <p class="lang-uk">Станьте ведучим шоу. Керуйте відтворенням музики, нараховуйте бали командам вручну на одному пристрої.</p>
+                </div>
+                <!-- Facts Mode -->
+                <div class="feature-card neon-cyan">
+                    <div class="card-icon">🧠</div>
+                    <h3 class="lang-en">Trivia & Facts</h3>
+                    <h3 class="lang-uk">Цікаві факти</h3>
+                    <p class="lang-en">No audio required! Answer engaging text questions about famous artists, albums, and tracks.</p>
+                    <p class="lang-uk">Звук не потрібен! Відповідайте на текстові питання про відомих виконавців, альбоми та хіти.</p>
+                </div>
+                <!-- Local Storage -->
+                <div class="feature-card neon-red">
+                    <div class="card-icon">💾</div>
+                    <h3 class="lang-en">Offline-First</h3>
+                    <h3 class="lang-uk">Гра Офлайн</h3>
+                    <p class="lang-en">Create your own ZIP packs with MP3 music and import them directly. No active internet required to play!</p>
+                    <p class="lang-uk">Створюйте власні ZIP-пакети з MP3-файлами та імпортуйте їх. Для гри не потрібне підключення до інтернету!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Live Demo Section -->
+    <section id="demo" class="section demo-section">
+        <div class="container">
+            <h2 class="section-title lang-en">Try it Live: Can you Guess the Song?</h2>
+            <h2 class="section-title lang-uk">Спробуй наживо: Чи вгадаєш ти пісню?</h2>
+            <p class="section-desc lang-en">Experience a live web demo of our Solo Mode gameplay! Turn your sound up and click play.</p>
+            <p class="section-desc lang-uk">Спробуй веб-демо нашого Соло-режиму! Увімкни звук і натисни Грати.</p>
+            
+            <div class="demo-card glass-card">
+                <div id="demo-start-view" class="demo-view active">
+                    <div class="demo-disc-wrapper">
+                        <div class="vinyl-disc">💿</div>
+                    </div>
+                    <button id="btn-start-demo" class="btn-primary">
+                        <span class="lang-en">Start Game Demo</span>
+                        <span class="lang-uk">Почати гру</span>
+                    </button>
+                </div>
+
+                <div id="demo-game-view" class="demo-view">
+                    <div class="demo-header">
+                        <div class="score-board">
+                            <span class="lang-en">Score: <span id="demo-score">0</span></span>
+                            <span class="lang-uk">Рахунок: <span id="demo-score-uk">0</span></span>
+                        </div>
+                        <div class="demo-timer">
+                            <div id="demo-timer-progress"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-player">
+                        <div class="vinyl-disc spinning">💿</div>
+                        <div class="music-wave">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="demo-options">
+                        <button class="btn-option" data-idx="0">Option A</button>
+                        <button class="btn-option" data-idx="1">Option B</button>
+                        <button class="btn-option" data-idx="2">Option C</button>
+                        <button class="btn-option" data-idx="3">Option D</button>
+                    </div>
+                </div>
+
+                <div id="demo-end-view" class="demo-view">
+                    <h3 class="lang-en">Game Over!</h3>
+                    <h3 class="lang-uk">Гра завершена!</h3>
+                    <p class="final-score lang-en">Your score: <span id="final-score-val">0</span> / 3</p>
+                    <p class="final-score lang-uk">Твій рахунок: <span id="final-score-val-uk">0</span> / 3</p>
+                    <button id="btn-restart-demo" class="btn-primary">
+                        <span class="lang-en">Play Again</span>
+                        <span class="lang-uk">Грати знову</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Packs Helper Section -->
+    <section id="packs" class="section packs-section">
+        <div class="container">
+            <h2 class="section-title lang-en">Create Custom Music Packs</h2>
+            <h2 class="section-title lang-uk">Створення кастомних паків</h2>
+            <p class="section-desc lang-en">Create custom packages with your favorite music! Follow the structure below or generate your metadata JSON automatically.</p>
+            <p class="section-desc lang-uk">Створюйте унікальні набори пісень зі своєю музикою! Дотримуйтесь структури або згенеруйте файл метаданих JSON нижче.</p>
+            
+            <div class="packs-grid">
+                <!-- Guide -->
+                <div class="glass-card pack-guide">
+                    <h3 class="lang-en">How to Package:</h3>
+                    <h3 class="lang-uk">Як створити пак:</h3>
+                    <ol>
+                        <li class="lang-en">Prepare your song MP3 files (e.g. <code>song1.mp3</code>, <code>song2.mp3</code>).</li>
+                        <li class="lang-uk">Підготуйте аудіофайли пісень у форматі MP3 (наприклад, <code>song1.mp3</code>, <code>song2.mp3</code>).</li>
+                        <li class="lang-en">Create a <code>metadata.json</code> file describing your tracks.</li>
+                        <li class="lang-uk">Створіть файл <code>metadata.json</code>, який описує ці треки.</li>
+                        <li class="lang-en">Create an icon image named <code>icon.png</code> or <code>icon.jpg</code>.</li>
+                        <li class="lang-uk">Додайте файл обкладинки пака з назвою <code>icon.png</code> або <code>icon.jpg</code>.</li>
+                        <li class="lang-en">Select all files and compress them into a <strong>ZIP archive</strong>.</li>
+                        <li class="lang-uk">Виділіть усі файли разом та стисніть їх у **ZIP-архів**.</li>
+                        <li class="lang-en">Import the ZIP directly inside the app lobby!</li>
+                        <li class="lang-uk">Імпортуйте ZIP-архів прямо в головному лобі гри!</li>
+                    </ol>
+                </div>
+
+                <!-- Generator -->
+                <div class="glass-card pack-generator">
+                    <h3 class="lang-en">Metadata JSON Generator</h3>
+                    <h3 class="lang-uk">Генератор файлу метаданих</h3>
+                    
+                    <form id="meta-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pack-name" class="lang-en">Pack Name</label>
+                                <label for="pack-name" class="lang-uk">Назва пака</label>
+                                <input type="text" id="pack-name" value="My Rock Hits" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pack-author" class="lang-en">Author</label>
+                                <label for="pack-author" class="lang-uk">Автор</label>
+                                <input type="text" id="pack-author" value="DaShiWoo" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pack-difficulty" class="lang-en">Difficulty</label>
+                                <label for="pack-difficulty" class="lang-uk">Складність</label>
+                                <select id="pack-difficulty">
+                                    <option value="easy">Easy / Легко</option>
+                                    <option value="medium" selected>Medium / Середньо</option>
+                                    <option value="hard">Hard / Важко</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pack-ver" class="lang-en">Version</label>
+                                <label for="pack-ver" class="lang-uk">Версія</label>
+                                <input type="number" id="pack-ver" value="1" min="1">
+                            </div>
+                        </div>
+
+                        <div class="song-list-builder">
+                            <h4 class="lang-en">Tracks:</h4>
+                            <h4 class="lang-uk">Список пісень:</h4>
+                            <div id="songs-container">
+                                <div class="song-row">
+                                    <input type="text" placeholder="Title / Назва" class="song-title" value="It's My Life" required>
+                                    <input type="text" placeholder="Artist / Виконавець" class="song-artist" value="Bon Jovi" required>
+                                    <input type="text" placeholder="File / Файл" class="song-file" value="song1.mp3" required>
+                                </div>
+                            </div>
+                            <button type="button" id="btn-add-song" class="btn-text">+ Add Track</button>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-generate">
+                            <span class="lang-en">Generate JSON</span>
+                            <span class="lang-uk">Згенерувати JSON</span>
+                        </button>
+                    </form>
+
+                    <div class="json-output-wrapper">
+                        <pre><code id="json-output">/* Generated JSON output will appear here */</code></pre>
+                        <button id="btn-copy-json" class="btn-secondary btn-copy">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telegram & Community Section -->
+    <section id="telegram" class="section telegram-section">
+        <div class="container">
+            <div class="telegram-banner glass-card">
+                <div class="telegram-icon">📢</div>
+                <div class="telegram-content">
+                    <h2 class="lang-en">Join Our Telegram Community!</h2>
+                    <h2 class="lang-uk">Приєднуйся до нашої Telegram-спільноти!</h2>
+                    <p class="lang-en">Share your custom music packs, download packs created by other players, and talk directly with the developers about new features.</p>
+                    <p class="lang-uk">Ділися своїми кастомними паками, завантажуй добірки пісень від інших гравців та спілкуйся напряму з розробниками про оновлення.</p>
+                    <a href="https://t.me/guessthesong" target="_blank" class="btn-primary btn-telegram">
+                        <span class="lang-en">Join Telegram Channel</span>
+                        <span class="lang-uk">Вступити в Telegram-канал</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Guess The Song. <span class="lang-en">Developed by DaShiWoo. All rights reserved.</span><span class="lang-uk">Розроблено DaShiWoo. Усі права захищені.</span></p>
+            <div class="footer-links">
+                <a href="https://github.com/DaShiWoo/GuessTheSong" target="_blank">GitHub Repository</a>
+                <a href="privacy_policy.txt" target="_blank">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
+</html>
